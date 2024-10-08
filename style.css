@@ -1,0 +1,68 @@
+*{
+    padding:0;
+    margin:0;
+}
+section{
+    display: flex;
+    font-family: "Roboto", sans-serif;
+    height:100vh;
+    width:100vw;
+}
+.description{
+    width:50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #e2d2c0;
+    color: rgb(41, 41, 41);
+}
+.description h1{
+    text-transform: capitalize;
+    padding: 10px;
+    font-size: 40px;
+}
+.description p{
+    font-size:20px;
+}
+.the_main_photo{
+    width:80%;
+    height:50%;
+}
+.the_rooms{
+    display: flex;
+    width:80%;
+}
+.the_rooms img{
+    /* flex-grow: 1; */
+    height:100px;
+    opacity:0.5;
+    transition: opacity 0.4s ease;
+    /* ease بتأثير */
+    cursor: pointer;
+    width:33.5%;
+}
+.the_rooms .one{
+    opacity:1;
+}
+.room{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* ////////     the media     ////////// */
+@media (max-width:600px){
+    section{
+        flex-direction: column;
+    }
+    .description{
+        width:100%;
+        padding:25% 0;
+    }
+    .room{
+        width: 100%;
+        height:100vh;
+    }
+}
